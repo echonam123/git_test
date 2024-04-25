@@ -1,0 +1,325 @@
+.edit-module {
+  display: none;
+  position: relative;
+  background-color: var(--gray-color6);
+}
+
+.edit-account-wrapper {
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--wrapper-gray);
+}
+
+.edit-account-preview {
+  padding: 10px;
+  width: 685px;
+  height: 442px;
+  background-color: var(--white-color);
+  border-radius: 5px;
+}
+
+.edit-account-preview h3 {
+  margin-bottom: 20px;
+}
+
+.preview-left {
+  padding: 20px 30px 10px 10px;
+  float: left;
+  width: 50%;
+}
+
+.avatar-scale {
+  width: 100%;
+  height: 250px;
+  border: 1px solid var(--gray-color);
+}
+
+.scale-btn {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.scale-btn>div {
+  cursor: pointer;
+  margin:  0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--gray-text);
+  border-radius: 2px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--gray-text);
+}
+
+.preview-right {
+  padding: 30px;
+  float: left;
+  width: 50%;
+}
+.avatar-show{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar-show img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid var(--gray-color);
+}
+
+.edit-btn{
+  margin-top: 100px;
+  display: flex;
+  justify-content:end;
+}
+
+.edit-btn>a{
+  margin-left: 10px;
+  padding: 0 15px;
+  height: 36px;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.prev-btn{
+  background-color: var(--gray-color);
+  color: var(--black-color2);
+}
+
+.next-btn{
+  background-color: var(--red-color2);
+  color: var(--white-color);
+}
+
+
+
+.edit-module .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  height: 1000px;
+}
+
+.edit-left {
+  width: 190px;
+  margin-right: 10px;
+}
+
+/* 左边的menu */
+.edit-menu {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-color);
+  font-size: 14px;
+  color: var(--black-color2);
+}
+
+.edit-menu ul {
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--gray-color3);
+}
+
+.edit-menu li,
+.edit-menu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+}
+
+.edit-menu a {
+  position: relative;
+}
+
+.edit-menu a i {
+  position: absolute;
+  right: 15px;
+}
+
+/* 左边的满意度 */
+
+.edit-satisfaction {
+  padding: 20px 0;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white-color);
+}
+
+.edit-satisfaction h4 {
+  text-align: center;
+  font-weight: normal;
+}
+
+.edit-satisfaction ul {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.edit-satisfaction ul li {
+  padding: 0 0 0 35px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.edit-satisfaction .submit {
+  padding: 6px;
+  width: 162px;
+  height: 52px;
+}
+
+.edit-satisfaction .submit input {
+  padding: 1px 6px 1px 10px;
+  float: left;
+  width: 104px;
+  height: 38px;
+  border: 1px solid var(--gray-color3);
+  border-right: none;
+}
+
+.edit-satisfaction .submit a {
+  display: block;
+  float: left;
+  width: 44px;
+  height: 38px;
+  background-color: var(--gray-color3);
+}
+
+/* 右边模块 */
+.edit-right {
+  flex: 1;
+}
+
+/* 右边的账户 */
+.personal-file-account {
+  margin-bottom: 10px;
+  height: 222px;
+  background-color: var(--white-color);
+}
+
+.personal-file-top {
+  display: flex;
+  padding: 24px 0 40px 24px;
+  height: 174px;
+}
+
+.personal-avatar-img {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  border: 3px solid var(--white-color);
+  box-shadow: 1px 1px 10px 1px var(--gray-color);
+  background-color: pink;
+  border-radius: 50%;
+}
+
+.personal-avatar-img:hover .personal-avatar-wrapper {
+  display: flex;
+}
+
+.personal-avatar-wrapper {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background-color: var(--gray-color);
+}
+
+#file-avatar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+
+.personal-avatar-wrapper img {
+  width: 40px;
+  height: 40px;
+}
+
+.personal-info {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.personal-nickname {
+  display: flex;
+}
+
+.personal-nickname .age {
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  border-radius: 11px;
+  background-color: var(--gray-color5);
+}
+
+.personal-nickname img {
+  width: 22px;
+  height: 22px;
+}
+
+.personal-nickname .name{
+  padding-right: 10px;
+  font-size: 22px;
+}
+
+.personal-file-bottom {
+  padding: 0 0 0 25px;
+  height: 48px;
+}
+
+/* 下方基本信息 */
+.personal-file-info {
+  width: 100%;
+  background-color: var(--white-color);
+}
+
+.personal-file-info h3 {
+  padding: 0 0 0 16px;
+  height: 48px;
+  font-size: 18px;
+  line-height: 48px;
+  border-bottom: 1px solid var(--gray-color3);
+}
+
+.personal-file-info ul {
+  padding: 32px;
+}
+
+.personal-file-info ul li {
+  margin: 0 0 32px;
+  font-size: 14px;
+  color: var(--black-color2)
+}
