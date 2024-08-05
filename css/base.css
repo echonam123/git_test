@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+ .clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.clearfix {
+  /* IE6,7专有 */
+  *zoom: 1;
+} 
+
+em,
+i {
+  font-style: normal;
+}
+
+input {
+  border: 0;
+  outline: 0;
+  /* 边框为0 */
+}
+
+button{
+  border:none;
+}
